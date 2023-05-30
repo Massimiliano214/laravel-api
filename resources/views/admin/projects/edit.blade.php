@@ -64,7 +64,6 @@
                 @if ($project->cover_image)
                 <div class="my-img-wrapper">
                     <img class="img-thumbnail my-img-thumb" src="{{asset('storage/' . $project->cover_image)}}" alt="{{$project->title}}"/>
-                    <a href="{{route('admin.projects.deleteImage', ['slug' => $project->slug])}}" class="my-img-delete btn btn-danger">X</a>
                 </div>
                 @endif
     
